@@ -151,6 +151,11 @@ li {
   margin-right: 40px;
 }
 
+.header-ul-info > link::before {
+  content: ' ';
+  background-image: url();
+}
+
 .nav-menu .link {
   color: var(--title-text-color);
 }
@@ -174,11 +179,6 @@ li {
 .link:active {
   color: var(--primary-link-color);
 }
-
-/* .nav-menu .link:hover,
-.nav-menu .link:focus {
-  color: var(--primary-link-color);
-} */
 
 .nav-menu a {
   text-decoration: none;
@@ -227,8 +227,6 @@ li {
   line-height: 2;
   letter-spacing: 1.08px;
   margin-bottom: 4px;
-  /* margin-left: 24px;
-  margin-top: 20px; */
 }
 
 .card-portfolio__paragraph {
@@ -236,7 +234,6 @@ li {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.48px;
-  /* margin-left: 24px; */
 }
 
 /* ------section filter ----- */
@@ -279,10 +276,20 @@ li {
 /* ------------ Studio -------------------- */
 /* -------------- section banner -------- */
 .banner {
-  background: var(--footer-bcg-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/bg_img.jpg);
+  background-size: cover;
+  background-position: center;
   /* ------------ LAYOUT IN CLASS ---------------  */
+  max-width: 1600px;
+  height: 600px;
   padding: 200px 0;
   text-align: center;
+  margin: 0 auto;
 }
 
 .banner-titel {
@@ -331,6 +338,33 @@ li {
 
 .about-li {
   width: 270px;
+}
+
+.about-li::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--bg-our-team);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.icon-antena::before {
+  background-image: url();
+}
+
+.icon-clock::before {
+  background-image: url(../img/clock\ 1.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../img/diagram\ 1.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../img/astronaut\ 1.svg);
 }
 
 .about-info li:last-child {
@@ -423,6 +457,22 @@ li {
 
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+}
+
+.icon-link {
+  display: flex;
+}
+
+.web-link {
+  width: 44px;
+  height: 44px;
+
+  cursor: pointer;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .box-title {

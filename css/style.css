@@ -9,6 +9,7 @@
   --footer-bcg-color: #2f303a;
   --card-portfolio: #eee;
   --header-line: #ececec;
+  --icon: #afb1b8;
 }
 
 * {
@@ -167,7 +168,22 @@ li {
   letter-spacing: 0.28px;
   /* ------------ LAYOUT IN CLASS---------------  */
   padding: 32px 0;
-  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.link-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.link-icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .link.active {
@@ -285,7 +301,7 @@ li {
   background-size: cover;
   background-position: center;
   /* ------------ LAYOUT IN CLASS ---------------  */
-  max-width: 1600px;
+  min-width: 1600px;
   height: 600px;
   padding: 200px 0;
   text-align: center;
@@ -340,31 +356,19 @@ li {
   width: 270px;
 }
 
-.about-li::before {
-  content: '';
-  display: block;
+.box-icon {
   height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
   background-color: var(--bg-our-team);
   border-radius: 4px;
-  margin-bottom: 30px;
 }
 
-.icon-antena::before {
-  background-image: url();
-}
-
-.icon-clock::before {
-  background-image: url(../img/clock\ 1.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../img/diagram\ 1.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../img/astronaut\ 1.svg);
+.about-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .about-info li:last-child {
@@ -427,7 +431,7 @@ li {
   text-align: center;
 }
 
-.our-team-info li {
+.our-team-info > .card {
   margin-right: 30px;
 }
 
@@ -461,22 +465,50 @@ li {
 
 .icon-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  padding: 0 0 30px 0;
+}
+
+.icon-link > li {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .web-link {
-  width: 44px;
-  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: var(--icon);
+}
 
-  cursor: pointer;
+.web-link:hover,
+.web-link:focus {
+  background-color: var(--primary-link-color);
+}
+
+.web-link:hover > .button-icon,
+.web-link:focus > .button-icon {
+  fill: #ffffff;
 }
 
 .button-icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
 .box-title {
-  padding: 30px 0;
+  padding: 30px 0px 0px 0px;
 }
 /* ------------ footer ------------- */
 

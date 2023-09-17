@@ -310,7 +310,7 @@ li {
   background-size: cover;
   background-position: center;
   /* ------------ LAYOUT IN CLASS ---------------  */
-  min-width: 1600px;
+  max-width: 1600px;
   height: 600px;
   padding: 200px 0;
   text-align: center;

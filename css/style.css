@@ -220,8 +220,8 @@ li {
   width: 370px;
 }
 
-.card-portfolio:hover,
-.card-portfolio:focus {
+.card-portfolio > a :hover,
+.card-portfolio > a :focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 
 }
@@ -477,7 +477,7 @@ li {
   justify-content: center;
   align-items: center;
   margin-top: 16px;
-  padding: 0 0 30px 0;
+  
 }
 
 .icon-link > li {
@@ -522,7 +522,7 @@ li {
 }
 
 .box-title {
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0px 30px 0px;
 }
 
 /* --------------- our clients -------------  */
@@ -613,6 +613,10 @@ li {
   font-style: normal;
 }
 
+.footer-addres {
+  margin-right: 70px;
+}
+
 .footer-info li {
   margin-bottom: 12px;
 }
@@ -641,7 +645,6 @@ li {
 
 .box-footer {
   display: flex;
-  gap: 70px;
   align-items: baseline;
 } 
 
